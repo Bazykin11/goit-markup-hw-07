@@ -1,0 +1,50 @@
+
+.clients {
+    padding: 94px 0;
+    text-align: center;
+}
+
+.clietnst-list-item {
+    width: 170px;
+    height: 92px;
+    margin-left: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:first-child{
+    margin-left: 0;
+}
+    &:hover {
+        border: 1px solid var(--first-background-color);
+}
+    &:focus {
+        border: 1px solid var(--first-background-color);
+}
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.clieants-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #AFB1B8;
+}
+
+.clients-company-icon{
+    fill:currentColor;
+    transition: fill 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clieants-link:hover .clients-company-icon,
+.clieants-link:focus .clients-company-icon {
+    fill: var(--first-background-color);
+}
+
