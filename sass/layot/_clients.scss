@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.clietnst-list-item {
+.clients__item {
     width: 170px;
     height: 92px;
     margin-left: 30px;
@@ -23,12 +23,12 @@
 }
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     margin-top: 50px;
 }
 
-.clieants-link {
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,14 +37,14 @@
     color: #AFB1B8;
 }
 
-.clients-company-icon{
+.clients__icon{
     fill:currentColor;
     transition: fill 250ms linear;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clieants-link:hover .clients-company-icon,
-.clieants-link:focus .clients-company-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
     fill: var(--first-background-color);
 }
 
