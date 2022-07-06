@@ -4,7 +4,7 @@
     padding: 94px 0;
 }
 
-.team_title { 
+.team__title { 
     margin-bottom: 50px;
     text-align: center;
 }
@@ -28,11 +28,10 @@
     display: flex;
     text-align: center;
     margin-left: -30px;
-    
 }
 
-.team-item{
-    flex-basis: calc((100 - 90)/4);
+.team-item {
+    flex-basis: calc((100% - 90px)/4);
     margin-left: 30px;
 }
 

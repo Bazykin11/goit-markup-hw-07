@@ -72,8 +72,7 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -372,7 +371,7 @@ body {
 }
 
 .team-item {
-  flex-basis: 2.5;
+  flex-basis: calc((100% - 90px) / 4);
   margin-left: 30px;
 }
 
@@ -623,30 +622,6 @@ body {
   border-radius: 4px;
   color: var(--third-font-color);
 }
-.subscribe-input::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  outline: none;
-  -moz-transition: color 250ms linear;
-  transition: color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-input:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  outline: none;
-  -ms-transition: color 250ms linear;
-  transition: color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .subscribe-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -657,12 +632,6 @@ body {
   outline: none;
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-input::-moz-placeholder:focus::-moz-placeholder {
-  color: transparent;
-}
-.subscribe-input:-ms-input-placeholder:focus:-ms-input-placeholder {
-  color: transparent;
 }
 .subscribe-input::placeholder:focus::placeholder {
   color: transparent;
@@ -697,8 +666,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -784,18 +752,6 @@ body {
   padding: 12px 16px;
   margin-top: 4px;
   outline: none;
-}
-.modal-text-area::-moz-placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-text-area:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
 }
 .modal-text-area::placeholder {
   font-size: 12px;
